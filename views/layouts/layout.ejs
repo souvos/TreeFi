@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shared/main.css">
     <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
     <link
     href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
@@ -17,11 +18,13 @@
     <title>TreeFi</title>
 </head>
 <body>
-    <br>
-    <%- include('../partials/header.ejs') %> 
-    <%- include('../partials/errorMessage.ejs') %> 
-    <%- body %>
-    <br>
+    <div class="container">
+        <%- include('../partials/header.ejs') %> 
+        <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %> 
+        <%- body %>
+        </div>
+    </div>
     
 </body>
 </html>
