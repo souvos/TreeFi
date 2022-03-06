@@ -70,7 +70,7 @@ router.get('/:id', async (req, res) => {
 
 router.get('/:id/edit', async (req, res) => {
     try {
-        const book = await Book/findById(req.params.id)
+        const book = await Book.findById(req.params.id)
         renderEditPage(res, book)
     } catch {
         res.redirect('/')
